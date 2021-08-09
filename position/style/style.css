@@ -56,10 +56,22 @@ header#header {
 
 /* main#main 시작 */
 
+main#main {
+  height: 464px;
+  /* footer영역 위치 지정을 위해 사용함 */
+  position: relative;
+}
+
 /* nav#gnb 시작 */
 nav#gnb {
+  width: 140px;
+  height: 464px;
   padding: 16px;
   background-color: #a4b39c;
+
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 #gnb li {
   line-height: 26px;
@@ -67,6 +79,24 @@ nav#gnb {
 /* nav#gnb 끝 */
 
 /* div#contents 시작 */
+
+/* 적용 1 */
+/* 
+div#contents {
+  margin-left: 140px;
+} */
+
+/* 적용 1 */
+
+/* 적용 2 */
+div#contents {
+  width: 438px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/* 적용 2 */
+
 div#contents h2 {
   color: #bfb42f;
   font-size: 23px;
