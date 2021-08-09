@@ -19,6 +19,17 @@ a:hover {
 ul {
   list-style: none;
 }
+
+.dispTbl {
+  display: table;
+}
+.dispTblRow {
+  display: table-row;
+}
+.dispTblCell {
+  display: table-cell;
+}
+
 /* Reset */
 
 /* div#wrap 시작 */
@@ -58,6 +69,10 @@ header#header {
 
 /* nav#gnb 시작 */
 nav#gnb {
+  width: 146px;
+  vertical-align: top;
+  /* display: table 레이아웃에서
+  아래쪽 세로정렬이 적용될 수 있기 때문 */
   padding: 16px;
   background-color: #a4b39c;
 }
@@ -67,6 +82,17 @@ nav#gnb {
 /* nav#gnb 끝 */
 
 /* div#contents 시작 */
+
+div#contents {
+  vertical-align: top;
+}
+/* display: table 레이아웃 적용하면
+    2열 또는 3열에서 특정 영역의
+    내용이 세로 정렬에서 bottom정렬로
+    적용될때가 있음. 이 때 vertical-align: top을
+    적용하여 세로 정렬에서 top정렬을 적용함.
+*/
+
 div#contents h2 {
   color: #bfb42f;
   font-size: 23px;
